@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Awesome weather needs to know your location.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Awesome weather needs to know your location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Awesome weather needs to know your location.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

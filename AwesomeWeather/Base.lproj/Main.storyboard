@@ -55,7 +55,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="autoDetectLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRy-Sc-nKk"/>
+                                            <action selector="autoDetectTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUl-bQ-HE6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-OS-Wac">
@@ -74,6 +74,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="enterManualTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP2-yn-yOR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -91,10 +94,29 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="drq-ED-bIb"/>
+                    <connections>
+                        <segue destination="I39-oR-2Yp" kind="show" identifier="WeatherHome" id="13Z-7y-huE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-488.40579710144931" y="79.6875"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="Hnk-TP-GRG">
+            <objects>
+                <viewController id="I39-oR-2Yp" customClass="WeatherViewController" customModule="AwesomeWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ite-iv-bC9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="W3k-eb-Zwh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fJa-nv-1u3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWZ-A2-1io" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="80"/>
         </scene>
     </scenes>
 </document>
