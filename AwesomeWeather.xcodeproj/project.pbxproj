@@ -12,7 +12,6 @@
 		C507CB75D04031E95752FA83 /* Pods_AwesomeWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04001FBA884875C0BC201470 /* Pods_AwesomeWeatherTests.framework */; };
 		C59288C12475909A0062ADF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59288C02475909A0062ADF7 /* Constants.swift */; };
 		C59288C22475909A0062ADF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59288C02475909A0062ADF7 /* Constants.swift */; };
-		C59288C32475909A0062ADF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59288C02475909A0062ADF7 /* Constants.swift */; };
 		C59288C5247593550062ADF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59288C4247593550062ADF7 /* NetworkManager.swift */; };
 		C59288C6247593550062ADF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59288C4247593550062ADF7 /* NetworkManager.swift */; };
 		C59288C7247593550062ADF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59288C4247593550062ADF7 /* NetworkManager.swift */; };
@@ -153,7 +152,6 @@
 				C5C4182E247578F400CD7769 /* Assets.xcassets */,
 				C5C41830247578F400CD7769 /* LaunchScreen.storyboard */,
 				C5C41833247578F400CD7769 /* Info.plist */,
-				C59288C02475909A0062ADF7 /* Constants.swift */,
 				C59288C4247593550062ADF7 /* NetworkManager.swift */,
 			);
 			path = AwesomeWeather;
@@ -180,6 +178,7 @@
 		C5C418552475798A00CD7769 /* WeatherUtils */ = {
 			isa = PBXGroup;
 			children = (
+				C59288C02475909A0062ADF7 /* Constants.swift */,
 				C5C41856247579B100CD7769 /* WeatherManager.swift */,
 			);
 			path = WeatherUtils;
@@ -483,7 +482,6 @@
 			files = (
 				C59288C7247593550062ADF7 /* NetworkManager.swift in Sources */,
 				C5C41848247578F400CD7769 /* AwesomeWeatherUITests.swift in Sources */,
-				C59288C32475909A0062ADF7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

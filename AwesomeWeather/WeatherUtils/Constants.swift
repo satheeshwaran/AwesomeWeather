@@ -14,7 +14,7 @@ struct Constants{
     static let APPID_PARAM="&appid="
     static let LAT_PARAM="lat"
     static let LONG_PARAM="lon"
-    static let FORECAST_SERVICE_LOC="weather?forecast="
-    static let FORECAST_SERVICE_CITY="weather?q="
+    static let FORECAST_SERVICE="forecast?"
+    static let FORECAST_SERVICE_CITY="forecast?q="
 }
 

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import AwesomeWeather
 
 class AwesomeWeatherTests: XCTestCase {
@@ -32,7 +33,23 @@ class AwesomeWeatherTests: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         XCTAssert((result != nil), "Response should not be nil")
         XCTAssert(result?.keys.count != 0, "Response should not be empty")
+        XCTAssert(result?["cod"] as? String == "200", "Response code should be 200")
     }
 
-
+    func testCoordinatesWeather() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let expectation = self.expectation(description: "testCoordinatesWeather")
+        let location = CLLocationCoordinate2D.init(latitude: 25.2048, longitude:55.2708)
+        var result: [String:AnyObject]?
+        WeatherManager.sharedInstance().getWeatherForLong(coordinates: location) { (response) in
+            print(response);
+            result = response
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssert((result != nil), "Response should not be nil")
+        XCTAssert(result?.keys.count != 0, "Response should not be empty")
+        XCTAssert(result?["cod"] as? String == "200", "Response code should be 200")
+    }
 }

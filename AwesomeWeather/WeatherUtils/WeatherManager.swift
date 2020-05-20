@@ -35,25 +35,27 @@ class WeatherManager{
         
     }
     
-    func getWeatherForLong(coordinates: CLLocationCoordinate2D) {
-        NetworkManager.GET(URL: generateRequestURL(type: .coordinates, params: coordinates)) { (response, error) in
-            
-        }
+    func getWeatherForLong(coordinates: CLLocationCoordinate2D, results: @escaping (_ response: [String:AnyObject])->()) {
+        self.makeAPICall(url: generateRequestURL(type: .coordinates, params: coordinates), params: nil, results: results)
     }
     
     func getWeatherForPlace(place: String, results: @escaping (_ response: [String:AnyObject])->()) {
-        NetworkManager.GET(URL: generateRequestURL(type: .city, params: place)) { (response, error) in
-            if let data = response{
-                do {
-                    if let parsedResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]{
-                        return results(parsedResponse)
-                    }
-                } catch {
-                    print(error.localizedDescription)
-                }
-            }
-            results([:])
-        }
+        self.makeAPICall(url: generateRequestURL(type: .city, params: place), params: nil, results: results)
+    }
+    
+    func makeAPICall(url:String, params: [String:AnyObject]?, results: @escaping (_ response: [String:AnyObject])->()){
+        NetworkManager.GET(URL:url) { (response, error) in
+                   if let data = response{
+                       do {
+                           if let parsedResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]{
+                               return results(parsedResponse)
+                           }
+                       } catch {
+                           print(error.localizedDescription)
+                       }
+                   }
+                   results([:])
+               }
     }
     
     private func generateRequestURL(type:RequestType, params:Any?)->String{
@@ -65,7 +67,7 @@ class WeatherManager{
             }
         case .coordinates:
             if let coordinates = params as? CLLocationCoordinate2D {
-                requestURL += "\(Constants.FORECAST_SERVICE_LOC)\(Constants.LAT_PARAM)=\(coordinates.latitude)\(Constants.LONG_PARAM)=\(coordinates.longitude)"
+                requestURL += "\(Constants.FORECAST_SERVICE)\(Constants.LAT_PARAM)=\(coordinates.latitude)&\(Constants.LONG_PARAM)=\(coordinates.longitude)"
             }
         }
         return appendAPIKEY(str: requestURL)

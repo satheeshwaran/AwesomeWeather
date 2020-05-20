@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FDC0A5A9-EAC4-4EDB-82BF-FA9EF327CCC0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/WeatherUtils/WeatherManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "getWeatherForPlace(place:results:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FDC0A5A9-EAC4-4EDB-82BF-FA9EF327CCC0 - fd9d91b2089d8353"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AwesomeWeather.WeatherManager.getWeatherForPlace(place: Swift.String, results: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AwesomeWeather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "345">
-               </Location>
-               <Location
-                  uuid = "FDC0A5A9-EAC4-4EDB-82BF-FA9EF327CCC0 - b025c01ac1f3fc33"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AwesomeWeatherTests.WeatherManager.getWeatherForPlace(place: Swift.String, results: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AwesomeWeatherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "345">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "34CD77D8-A2BD-4CC7-805A-70E4AAD75A28"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -62,8 +14,8 @@
             filePath = "AwesomeWeather/WeatherUtils/WeatherManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "getWeatherForPlace(place:results:)"
             landmarkType = "7">
             <Locations>
@@ -78,8 +30,8 @@
                   urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
                   offsetFromSymbolStart = "56">
                </Location>
                <Location
@@ -93,57 +45,9 @@
                   urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
                   offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "20DC86EC-B250-4C1B-96DA-B9D0ED474477"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/WeatherUtils/WeatherManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "getWeatherForPlace(place:results:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "20DC86EC-B250-4C1B-96DA-B9D0ED474477 - fd9d91b2089d8353"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AwesomeWeather.WeatherManager.getWeatherForPlace(place: Swift.String, results: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AwesomeWeather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "252">
-               </Location>
-               <Location
-                  uuid = "20DC86EC-B250-4C1B-96DA-B9D0ED474477 - b025c01ac1f3fc33"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AwesomeWeatherTests.WeatherManager.getWeatherForPlace(place: Swift.String, results: (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AwesomeWeatherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "252">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -332,8 +236,8 @@
             filePath = "AwesomeWeather/WeatherUtils/WeatherManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "generateRequestURL(type:params:)"
             landmarkType = "7">
             <Locations>
@@ -348,8 +252,8 @@
                   urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
                   offsetFromSymbolStart = "302">
                </Location>
                <Location
@@ -363,8 +267,8 @@
                   urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/WeatherUtils/WeatherManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
                   offsetFromSymbolStart = "302">
                </Location>
             </Locations>
@@ -464,6 +368,22 @@
                   offsetFromSymbolStart = "246">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DC2D6BA-1921-4B0F-8576-8B62C5686D5B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AwesomeWeatherTests/AwesomeWeatherTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "testCoordinatesWeather()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
