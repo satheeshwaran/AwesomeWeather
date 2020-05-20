@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func autoDetectTapped(_ sender: Any) {
+    }
+    
+    @IBAction func enterManualTapped(_ sender: Any) {
+    }
 }
 

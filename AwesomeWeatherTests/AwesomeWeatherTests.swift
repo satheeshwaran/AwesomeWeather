@@ -19,16 +19,20 @@ class AwesomeWeatherTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testCityWeather() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let expectation = self.expectation(description: "testCityWeather")
+        var result: [String:AnyObject]?
+        WeatherManager.sharedInstance().getWeatherForPlace(place: "Chennai") { (response) in
+            print(response);
+            result = response
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssert((result != nil), "Response should not be nil")
+        XCTAssert(result?.keys.count != 0, "Response should not be empty")
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }
