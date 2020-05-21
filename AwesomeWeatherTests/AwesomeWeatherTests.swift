@@ -25,7 +25,7 @@ class AwesomeWeatherTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let expectation = self.expectation(description: "testCityWeather")
         var result: Forecast?
-        WeatherManager.sharedInstance().getWeatherForPlace(place: "Chennai") { (response) in
+        WeatherManager.sharedInstance().getWeatherForPlace(place: "Chennai") { (response,err)  in
             result = response
             expectation.fulfill()
         }
@@ -39,7 +39,7 @@ class AwesomeWeatherTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let expectation = self.expectation(description: "testCityCountryWeather")
         var result: Forecast?
-        WeatherManager.sharedInstance().getWeatherForPlace(place: "Dublin,Ireland") { (response) in
+        WeatherManager.sharedInstance().getWeatherForPlace(place: "Dublin,Ireland") { (response,err) in
             result = response
             expectation.fulfill()
         }
@@ -55,7 +55,7 @@ class AwesomeWeatherTests: XCTestCase {
         let expectation = self.expectation(description: "testCoordinatesWeather")
         let location = CLLocationCoordinate2D.init(latitude: 25.2048, longitude:55.2708)
         var result: Forecast?
-        WeatherManager.sharedInstance().getWeatherForLong(coordinates: location) { (response) in
+        WeatherManager.sharedInstance().getWeatherForLong(coordinates: location) { (response,err) in
             print(response.debugDescription)
             result = response
             expectation.fulfill()

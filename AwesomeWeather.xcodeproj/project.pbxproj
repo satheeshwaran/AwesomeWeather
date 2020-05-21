@@ -64,6 +64,9 @@
 		C5F8F5E62477214600DCF8AC /* UserSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F8F5E52477214600DCF8AC /* UserSelection.swift */; };
 		C5F8F5E72477214600DCF8AC /* UserSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F8F5E52477214600DCF8AC /* UserSelection.swift */; };
 		C5F8F5E82477214700DCF8AC /* UserSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F8F5E52477214600DCF8AC /* UserSelection.swift */; };
+		C5F8F5EA247729A600DCF8AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C5F8F5E9247729A600DCF8AC /* README.md */; };
+		C5F8F5EB247729A600DCF8AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C5F8F5E9247729A600DCF8AC /* README.md */; };
+		C5F8F5EC247729A600DCF8AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C5F8F5E9247729A600DCF8AC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +127,7 @@
 		C5F8F5E0247717A200DCF8AC /* UINavigationContoller+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationContoller+Style.swift"; sourceTree = "<group>"; };
 		C5F8F5E324771DC700DCF8AC /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 		C5F8F5E52477214600DCF8AC /* UserSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelection.swift; sourceTree = "<group>"; };
+		C5F8F5E9247729A600DCF8AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		E68F87CB9617AF3AEE61B989 /* Pods-AwesomeWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeWeatherTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeWeatherTests/Pods-AwesomeWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		F4BD0516099E5297046CD98B /* Pods_AwesomeWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -224,6 +228,7 @@
 		C5C41824247578F100CD7769 /* AwesomeWeather */ = {
 			isa = PBXGroup;
 			children = (
+				C5F8F5E9247729A600DCF8AC /* README.md */,
 				C5C4185924757BA800CD7769 /* Podfile */,
 				C59288F62476DDA50062ADF7 /* Utils */,
 				C59288ED2476BFE90062ADF7 /* ViewModel */,
@@ -405,6 +410,7 @@
 			files = (
 				C5C41832247578F400CD7769 /* LaunchScreen.storyboard in Resources */,
 				C5C4182F247578F400CD7769 /* Assets.xcassets in Resources */,
+				C5F8F5EA247729A600DCF8AC /* README.md in Resources */,
 				C5C4185A24757BA800CD7769 /* Podfile in Resources */,
 				C5C4182D247578F100CD7769 /* Main.storyboard in Resources */,
 			);
@@ -414,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F8F5EB247729A600DCF8AC /* README.md in Resources */,
 				C5C4185B24757BA800CD7769 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F8F5EC247729A600DCF8AC /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
