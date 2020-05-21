@@ -9,12 +9,12 @@
 import Foundation
 import CoreLocation
 
-/*
- {"coord":{"lon":80.28,"lat":13.09},"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03n"}],"base":"stations","main":{"temp":306.02,"feels_like":311.69,"temp_min":305.93,"temp_max":306.15,"pressure":1003,"humidity":70},"visibility":6000,"wind":{"speed":2.6,"deg":210},"clouds":{"all":40},"dt":1589992293,"sys":{"type":1,"id":9218,"country":"IN","sunrise":1589933548,"sunset":1589979519},"timezone":19800,"id":1264527,"name":"Chennai","cod":200}
- */
 
+/// WeatherManager is the interface through which the viewmodel will get the weather data from.
 class WeatherManager{
+    typealias WeatherCompletion = (_ response: Forecast?, _ error: Error?)->()
     private static var shared:WeatherManager!
+    private static var userChoiceKeyName = "LOCATION_CHOSEN"
     private enum RequestType:Int{
         case city=1
         case coordinates=2
@@ -27,35 +27,43 @@ class WeatherManager{
         return WeatherManager.shared
     }
     
-    func saveWeathreLocation(){
-        
+    func saveWeathreLocation(userchoise: UserSelection){
+        if let data = try? JSONEncoder().encode(userchoise) {
+            UserDefaults.standard.set(data, forKey: WeatherManager.userChoiceKeyName)
+        }
     }
     
-    func retriveWeatherLocation(){
-        
+    func retriveWeatherLocation()->UserSelection?{
+        if let data = UserDefaults.standard.value(forKey: WeatherManager.userChoiceKeyName) as? Data, let userSelection = try? JSONDecoder().decode(UserSelection.self, from: data) {
+            return userSelection
+        }
+        return nil
     }
     
-    func getWeatherForLong(coordinates: CLLocationCoordinate2D, results: @escaping (_ response: [String:AnyObject])->()) {
+    func getWeatherForLong(coordinates: CLLocationCoordinate2D, results: @escaping WeatherCompletion) {
         self.makeAPICall(url: generateRequestURL(type: .coordinates, params: coordinates), params: nil, results: results)
     }
     
-    func getWeatherForPlace(place: String, results: @escaping (_ response: [String:AnyObject])->()) {
+    func getWeatherForPlace(place: String, results: @escaping WeatherCompletion) {
         self.makeAPICall(url: generateRequestURL(type: .city, params: place), params: nil, results: results)
     }
     
-    func makeAPICall(url:String, params: [String:AnyObject]?, results: @escaping (_ response: [String:AnyObject])->()){
+    func makeAPICall(url:String, params: [String:AnyObject]?, results: @escaping WeatherCompletion){
         NetworkManager.GET(URL:url) { (response, error) in
-                   if let data = response{
-                       do {
-                           if let parsedResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]{
-                               return results(parsedResponse)
-                           }
-                       } catch {
-                           print(error.localizedDescription)
-                       }
-                   }
-                   results([:])
-               }
+            if let data = response{
+                do{
+                    let forecast = try JSONDecoder().decode(Forecast.self, from: data)
+                    print(forecast)
+                    return results(forecast, nil)
+                }
+                catch let err{
+                    return results(nil, err)
+                }
+            }
+            else{
+                results(nil,error)
+            }
+        }
     }
     
     private func generateRequestURL(type:RequestType, params:Any?)->String{

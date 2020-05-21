@@ -7,79 +7,37 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "34CD77D8-A2BD-4CC7-805A-70E4AAD75A28"
+            uuid = "2EA67771-5E9A-4EA7-BCD4-5CD64A9730F0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/WeatherUtils/WeatherManager.swift"
+            filePath = "AwesomeWeather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "getWeatherForPlace(place:results:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "didUpdate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
          <BreakpointContent
-            uuid = "CE0E4CFA-3748-4C69-8F57-5E98F912125B"
-            shouldBeEnabled = "Yes"
+            uuid = "2BCE50B2-8CAB-47D2-A7EC-49AB98ECB9E2"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "GET(URL:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4A8A96E2-2C7E-41D7-A475-142DEA5C42DE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "GET(URL:completionHandler:)"
-            landmarkType = "7">
+            symbolName = "*0x7fff51d74792">
             <Locations>
                <Location
-                  uuid = "4A8A96E2-2C7E-41D7-A475-142DEA5C42DE - cd9d18de1321d305"
-                  shouldBeEnabled = "Yes"
+                  uuid = "2BCE50B2-8CAB-47D2-A7EC-49AB98ECB9E2 - 24e6b379dd68b551"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static AwesomeWeather.NetworkManager.GET(URL: Swift.Optional&lt;Swift.String&gt;, completionHandler: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AwesomeWeather"
+                  symbolName = "Foundation.(__JSONDecoder in _12768CA107A31EF2DCE034FD75B541C9).unbox_(_: Any, as: Swift.Decodable.Type) throws -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "libswiftFoundation.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "148">
-               </Location>
-               <Location
-                  uuid = "4A8A96E2-2C7E-41D7-A475-142DEA5C42DE - 166d233ebf854c93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Optional&lt;Foundation.Data&gt;, Alamofire.AFError&gt;) -&gt; () in static AwesomeWeather.NetworkManager.GET(URL: Swift.Optional&lt;Swift.String&gt;, completionHandler: (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AwesomeWeather"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sa20084380/Documents/Learning/AwesomeWeather/AwesomeWeather/AwesomeWeather/NetworkManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "246">
+                  offsetFromSymbolStart = "4242">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -87,143 +45,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A84284FE-262D-406C-AA0B-C5B5C7CB5B39"
+            uuid = "E1405C88-68F4-42D7-94DB-5F8F57E57477"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "GET(URL:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A3FEA710-5E2D-4A96-88F9-DDEDCD76719E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/WeatherUtils/WeatherManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "generateRequestURL(type:params:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9731FF28-3920-4BA9-B8B4-5545CDEF273C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "GET(URL:completionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7CA7B54E-92A8-435E-A991-ED9321484719"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/NetworkManager.swift"
+            filePath = "AwesomeWeather/ViewModel/ForecastViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "GET(URL:completionHandler:)"
-            landmarkType = "7">
+            landmarkName = "forecast"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4DC2D6BA-1921-4B0F-8576-8B62C5686D5B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeatherTests/AwesomeWeatherTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "testCoordinatesWeather()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6BDE7894-96BD-41F3-9A32-2FF84376D633"
+            uuid = "FB0326C2-5AAD-48A9-9EE9-408AEA3BC078"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/WeatherUtils/LocationManager.swift"
+            filePath = "AwesomeWeather/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "locationManager(_:didFailWithError:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "proceedToWeatherHome(selection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "03FF894F-CA41-483F-963E-138A300E666C"
+            uuid = "6B2C11E2-A3CE-42EE-8C46-9AAAC3581830"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/WeatherUtils/LocationManager.swift"
+            filePath = "AwesomeWeather/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A821F144-A4C8-405B-AE91-5F1382373FFB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/WeatherViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "getWeatherForCoordinates()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E85D40B3-1D2A-4C8A-8059-D797B7EAA3B3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AwesomeWeather/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

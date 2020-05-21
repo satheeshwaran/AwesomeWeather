@@ -14,7 +14,8 @@ struct Constants{
     static let APPID_PARAM="&appid="
     static let LAT_PARAM="lat"
     static let LONG_PARAM="lon"
-    static let FORECAST_SERVICE="forecast?"
-    static let FORECAST_SERVICE_CITY="forecast?q="
+    static let FORECAST_SERVICE="forecast?units=metric&"
+    static let FORECAST_SERVICE_CITY="forecast?units=metric&q="
+    static let WEATHER_ICON="http://openweathermap.org/img/wn/"
 }
 

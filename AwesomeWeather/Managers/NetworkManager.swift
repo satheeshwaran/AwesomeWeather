@@ -9,7 +9,13 @@
 import Foundation
 import Alamofire
 
+/// NetworkManager manages all API calls going out of the API.
 struct NetworkManager {
+    
+    /// Method to make a HTTP GET CALL
+    /// - Parameters:
+    ///   - URL: The URL with query params
+    ///   - completionHandler: compeltion handeler where the response in deliverd.
     static func GET(URL:String!, completionHandler: @escaping (_ response:Data?, _ error:Error?) -> ()){
         AF.request(URL).response { response in
             debugPrint(response)

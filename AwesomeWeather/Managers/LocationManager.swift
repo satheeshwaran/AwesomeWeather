@@ -10,6 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
+/// LocationManger manages the location permissions and handles location access of the app.
 class LocationManger:NSObject,CLLocationManagerDelegate{
     
     private var clManager:CLLocationManager!
@@ -28,7 +29,7 @@ class LocationManger:NSObject,CLLocationManagerDelegate{
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        showAlert(message: error.localizedDescription)
+        //showAlert(message: error.localizedDescription)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -66,20 +67,20 @@ class LocationManger:NSObject,CLLocationManagerDelegate{
             return true;
         }else{
             //SHOW ALERT
-            showAlert(message: "Kindly enable location services in settings")
+            //showAlert(message: "Kindly enable location services in settings")
         }
         return false;
     }
     
-    func showAlert(title:String = "Alert", message:String){
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        var rootViewController = UIApplication.shared.keyWindow?.rootViewController
-        if let navigationController = rootViewController as? UINavigationController {
-            rootViewController = navigationController.viewControllers.first
-        }
-        if let tabBarController = rootViewController as? UITabBarController {
-            rootViewController = tabBarController.selectedViewController
-        }
-        rootViewController?.present(alertController, animated: true, completion: nil)
-    }
+//    func showAlert(title:String = "Alert", message:String){
+//        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        var rootViewController = UIApplication.shared.keyWindow?.rootViewController
+//        if let navigationController = rootViewController as? UINavigationController {
+//            rootViewController = navigationController.viewControllers.first
+//        }
+//        if let tabBarController = rootViewController as? UITabBarController {
+//            rootViewController = tabBarController.selectedViewController
+//        }
+//        rootViewController?.present(alertController, animated: true, completion: nil)
+//    }
 }
