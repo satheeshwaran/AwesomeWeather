@@ -31,21 +31,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Dr0-22-Cdv">
-                                <rect key="frame" x="10.5" y="315" width="393" height="320"/>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Dr0-22-Cdv">
+                                <rect key="frame" x="10.5" y="351" width="393" height="248"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The weather is awesome today!   Let's get you started. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HM0-rj-rgg">
-                                        <rect key="frame" x="19.5" y="0.0" width="354" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="7G1-1Y-bTO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The weather is awesome today!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="pzx-jp-eHN">
+                                        <rect key="frame" x="6.5" y="0.0" width="380.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="HM0-rj-rgg">
+                                        <rect key="frame" x="19.5" y="70" width="354" height="28"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0m-Rr-HlQ" customClass="WeatherAppButton" customModule="AwesomeWeather" customModuleProvider="target">
-                                        <rect key="frame" x="29.5" y="200" width="334" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="29.5" y="138" width="334" height="50"/>
+                                        <color key="backgroundColor" red="0.47450980392156861" green="0.72156862745098038" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="YFK-Ny-cEj"/>
                                         </constraints>
@@ -63,21 +66,14 @@
                                             <action selector="autoDetectTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUl-bQ-HE6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-OS-Wac">
-                                        <rect key="frame" x="116.5" y="300" width="160" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-OS-Wac">
+                                        <rect key="frame" x="116.5" y="228" width="160" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="etq-rm-gj0"/>
                                         </constraints>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Enter address manually">
-                                                    <attributes>
-                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="15"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Enter address manually">
+                                            <color key="titleColor" red="0.47450980390000003" green="0.72156862749999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="enterManualTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP2-yn-yOR"/>
@@ -85,12 +81,13 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="pzx-jp-eHN" firstAttribute="centerX" secondItem="Dr0-22-Cdv" secondAttribute="centerX" id="PeQ-qI-gWg"/>
                                     <constraint firstItem="E0m-Rr-HlQ" firstAttribute="width" secondItem="Dr0-22-Cdv" secondAttribute="width" multiplier="0.85" id="dTa-Kf-GfH"/>
                                     <constraint firstItem="HM0-rj-rgg" firstAttribute="width" secondItem="Dr0-22-Cdv" secondAttribute="width" multiplier="0.9" id="goD-AF-2tl"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.50980392156862742" green="0.80000000000000004" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.019607843137254902" green="0.14901960784313725" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dr0-22-Cdv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TSU-sU-Qv9"/>
                             <constraint firstItem="Dr0-22-Cdv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.95" id="ZgG-H5-cIP"/>
@@ -258,7 +255,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.50980392159999999" green="0.80000000000000004" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.019607843137254902" green="0.14901960784313725" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nOU-j5-4lG" firstAttribute="width" secondItem="ite-iv-bC9" secondAttribute="width" id="UQh-ju-REb"/>
                             <constraint firstItem="nOU-j5-4lG" firstAttribute="centerX" secondItem="W3k-eb-Zwh" secondAttribute="centerX" id="Wb6-OW-pNV"/>

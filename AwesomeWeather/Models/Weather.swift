@@ -56,6 +56,7 @@ struct Weather:Decodable {
     }
     
     func getWeatherIcon()->URL?{
-        return URL.init(string:"\(Constants.WEATHER_ICON)\(self.icon ?? "")@2x.png")
+        let icon = self.icon?.replacingOccurrences(of: "n", with: "d") //To get day icon that goes well with dark barkgrounds
+        return URL.init(string:"\(Constants.WEATHER_ICON)\(icon ?? "")@2x.png")
     }
 }
