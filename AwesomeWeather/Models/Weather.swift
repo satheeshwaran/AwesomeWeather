@@ -46,13 +46,13 @@ struct Weather:Decodable {
     var humidity: String?
     init(from decoder: Decoder) throws {
         let rawResponse = try RawServerResponse(from: decoder)
-        self.temperature = "\( rawResponse.main?.feels_like?.rounded() ?? 0)°C"
+        self.temperature = "\(Int(rawResponse.main?.feels_like?.rounded() ?? 0))°C"
         let dateTime = Utils.getDateTimeFromString(str: rawResponse.dt_txt)
         self.date = dateTime.1
         self.time = dateTime.0
         self.icon = rawResponse.weather?[0].icon
         self.description = rawResponse.weather?[0].description
-        self.humidity = "\(rawResponse.main?.humidity ?? 0)%"
+        self.humidity = "\(Int(rawResponse.main?.humidity ?? 0))%"
     }
     
     func getWeatherIcon()->URL?{
