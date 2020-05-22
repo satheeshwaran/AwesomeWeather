@@ -1,5 +1,5 @@
 # AwesomeWeather
-Awesome weather app
+Awesome weather app is a weather forecast tool, which helps you get the weather details in a simple & elegant way. No fancy stuff just a minimalistic approach.
 
 ## Design patters used: MVVM
 
@@ -12,7 +12,10 @@ pod install
 ```
 Hit run on Xcode after selecting any iPhone simulator
 
-## PODS used: AwesomeWeather (for stubbing requests)
+## 3rd Parties used:
+```
+   Alamofire (for network requests)
+```
 
 ## How to run tests
 
@@ -28,6 +31,10 @@ Run the unit test case suite in the AwesomeWeatherTests target or Hit CMD + U in
 - [ ] Multi-location support
 - [ ] Cleaner architecture
 - [ ] More documentation
+- [ ] SiriKit integration
+- [ ] Notifications periodically
+- [ ] Background fetch
+- [ ] Notification center extension to support widgets
 
 # Screenshots
 
