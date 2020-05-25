@@ -14,7 +14,7 @@ Hit run on Xcode after selecting any iPhone simulator
 
 ## 3rd Parties used:
 ```
-   Alamofire (for network requests)
+Alamofire (for network requests)
 ```
 
 ## How to run tests
@@ -39,20 +39,13 @@ Run the unit test case suite in the AwesomeWeatherTests target or Hit CMD + U in
 # Screenshots
 
 ## Welcome screen
-   ![Welcome](Screenshots/1.png)
-
-<div class="page"/>
+   [<img src="Screenshots/1.png" width="320"/>](Screenshots/1.png)
 
 ## Manual selection
-   ![Manual](Screenshots/2.png)
+   [<img src="Screenshots/2.png" width="320"/>](Screenshots/2.png)
    
-<div class="page"/>
-
 ## Weather Home
-   ![Home](Screenshots/3.png)
-
-<div class="page"/>
+   [<img src="Screenshots/3.png" width="320"/>](Screenshots/3.png)
 
 ## Pull to refresh
-   ![Referssh](Screenshots/4.png)
-
+   [<img src="Screenshots/4.png" width="320"/>](Screenshots/4.png)
