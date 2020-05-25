@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class WeatherViewController: UIViewController, UITableViewDelegate, ViewModelInterface {
+class WeatherViewController: UIViewController {
     var location:CLLocationCoordinate2D?
     var placeName:String?
     var weatherData:Forecast?
@@ -65,7 +65,15 @@ class WeatherViewController: UIViewController, UITableViewDelegate, ViewModelInt
             }
         }
     }
-    
+}
+
+extension WeatherViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+}
+
+extension WeatherViewController: ViewModelInterface{
     func didUpdate() {
         updateUI()
     }
@@ -78,7 +86,4 @@ class WeatherViewController: UIViewController, UITableViewDelegate, ViewModelInt
         showAlert(message: "Oops something went wrong")
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
-    }
 }
